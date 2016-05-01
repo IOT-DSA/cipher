@@ -4,3 +4,7 @@ pubspec.lock
 *.js
 *.deps
 *.map
+.idea
+*.iml
+.packages
+.pub

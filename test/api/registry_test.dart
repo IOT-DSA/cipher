@@ -8,7 +8,7 @@
 library cipher.test.api.registry_test;
 
 import "package:cipher/impl/base.dart";
-import "package:unittest/unittest.dart";
+import "package:test/test.dart";
 
 import "../test/registry_tests.dart";
 

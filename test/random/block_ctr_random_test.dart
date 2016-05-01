@@ -11,7 +11,7 @@ import "dart:typed_data";
 
 import "package:cipher/cipher.dart";
 import "package:cipher/impl/base.dart";
-import "package:unittest/unittest.dart";
+import "package:test/test.dart";
 
 void main() {
 
