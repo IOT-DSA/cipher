@@ -96,18 +96,18 @@ abstract class ECPointBase implements ECPoint {
 
   Uint8List getEncoded([bool compressed = true]);
 
-  ECPointBase operator +(ECPoint b);
-  ECPointBase operator -(ECPoint b);
-  ECPointBase operator -();
+  ECPoint operator +(ECPoint b);
+  ECPoint operator -(ECPoint b);
+  ECPoint operator -();
 
-  ECPointBase twice();
+  ECPoint twice();
 
   /**
    * Multiplies this <code>ECPoint</code> by the given number.
    * @param k The multiplicator.
    * @return <code>k * this</code>.
    */
-  ECPointBase operator *(BigInteger k) {
+  ECPoint operator *(BigInteger k) {
     if( k.signum() < 0 ) {
       throw new ArgumentError("The multiplicator cannot be negative");
     }

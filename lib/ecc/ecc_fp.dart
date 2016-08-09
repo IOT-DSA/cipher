@@ -214,7 +214,7 @@ class ECPoint extends ecc_base.ECPointBase {
   }
 
   // B.3 pg 62
-  ecc_base.ECPointBase operator +(ecc_base.ECPointBase b) {
+  ecc.ECPoint operator +(ecc.ECPoint b) {
     if( isInfinity ) {
       return b;
     }
@@ -243,7 +243,7 @@ class ECPoint extends ecc_base.ECPointBase {
   }
 
   // B.3 pg 62
-  ecc_base.ECPointBase twice() {
+  ecc.ECPoint twice() {
 
     if( isInfinity ) {
       // Twice identity element (point at infinity) is identity
@@ -267,7 +267,7 @@ class ECPoint extends ecc_base.ECPointBase {
   }
 
   // D.3.2 pg 102 (see Note:)
-  ecc_base.ECPointBase operator -(ecc_base.ECPointBase b)
+  ecc.ECPoint operator -(ecc.ECPoint b)
   {
     if( b.isInfinity ) {
       return this;
@@ -277,7 +277,7 @@ class ECPoint extends ecc_base.ECPointBase {
     return this + (-b);
   }
 
-  ecc_base.ECPointBase operator -()
+  ecc.ECPoint operator -()
   {
     return new ECPoint(curve, x, -y, isCompressed );
   }
