@@ -41,10 +41,10 @@ abstract class ECFieldElementBase implements ECFieldElement {
   int get fieldSize;
   int get byteLength => ((fieldSize + 7) ~/ 8);
 
-  ECFieldElementBase operator +( ECFieldElementBase b );
-  ECFieldElementBase operator -( ECFieldElementBase b );
-  ECFieldElementBase operator *( ECFieldElementBase b );
-  ECFieldElementBase operator /( ECFieldElementBase b );
+  ECFieldElementBase operator +( ECFieldElement b );
+  ECFieldElementBase operator -( ECFieldElement b );
+  ECFieldElementBase operator *( ECFieldElement b );
+  ECFieldElementBase operator /( ECFieldElement b );
 
   ECFieldElementBase operator -();
 
@@ -96,8 +96,8 @@ abstract class ECPointBase implements ECPoint {
 
   Uint8List getEncoded([bool compressed = true]);
 
-  ECPointBase operator +(ECPointBase b);
-  ECPointBase operator -(ECPointBase b);
+  ECPointBase operator +(ECPoint b);
+  ECPointBase operator -(ECPoint b);
   ECPointBase operator -();
 
   ECPointBase twice();

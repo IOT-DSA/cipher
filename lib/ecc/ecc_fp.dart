@@ -12,9 +12,10 @@ import "dart:typed_data";
 import 'package:bignum/bignum.dart';
 import "package:cipher/api.dart";
 import "package:cipher/ecc/ecc_base.dart" hide ECFieldElementBase, ECPointBase, ECCurveBase;
-import "package:cipher/ecc/ecc_base.dart" as ecc;
+import "package:cipher/ecc/ecc_base.dart" as ecc_base;
+import "package:cipher/api/ecc.dart" as ecc;
 
-class ECFieldElement extends ecc.ECFieldElementBase {
+class ECFieldElement extends ecc_base.ECFieldElementBase {
 
   final BigInteger q;
   final BigInteger x;
@@ -30,10 +31,10 @@ class ECFieldElement extends ecc.ECFieldElementBase {
 
   BigInteger toBigInteger() => x;
 
-  ECFieldElement operator +( ECFieldElement b ) => new ECFieldElement( q, (x + b.toBigInteger()) % q );
-  ECFieldElement operator -( ECFieldElement b ) => new ECFieldElement( q, (x - b.toBigInteger()) % q );
-  ECFieldElement operator *( ECFieldElement b ) => new ECFieldElement( q, (x * b.toBigInteger()) % q );
-  ECFieldElement operator /( ECFieldElement b ) => new ECFieldElement( q, (x * b.toBigInteger().modInverse(q)) % q );
+  ECFieldElement operator +( ecc.ECFieldElement b ) => new ECFieldElement( q, (x + b.toBigInteger()) % q );
+  ECFieldElement operator -( ecc.ECFieldElement b ) => new ECFieldElement( q, (x - b.toBigInteger()) % q );
+  ECFieldElement operator *( ecc.ECFieldElement b ) => new ECFieldElement( q, (x * b.toBigInteger()) % q );
+  ECFieldElement operator /( ecc.ECFieldElement b ) => new ECFieldElement( q, (x * b.toBigInteger().modInverse(q)) % q );
 
   ECFieldElement operator -() => new ECFieldElement( q, -x % q );
 
@@ -156,7 +157,7 @@ class ECFieldElement extends ecc.ECFieldElementBase {
 }
 
 /// Elliptic curve points over Fp
-class ECPoint extends ecc.ECPointBase {
+class ECPoint extends ecc_base.ECPointBase {
 
   /**
    * Create a point that encodes with or without point compresion.
@@ -213,7 +214,7 @@ class ECPoint extends ecc.ECPointBase {
   }
 
   // B.3 pg 62
-  ECPoint operator +(ECPoint b) {
+  ecc_base.ECPointBase operator +(ecc_base.ECPointBase b) {
     if( isInfinity ) {
       return b;
     }
@@ -242,7 +243,7 @@ class ECPoint extends ecc.ECPointBase {
   }
 
   // B.3 pg 62
-  ECPoint twice() {
+  ecc_base.ECPointBase twice() {
 
     if( isInfinity ) {
       // Twice identity element (point at infinity) is identity
@@ -266,7 +267,7 @@ class ECPoint extends ecc.ECPointBase {
   }
 
   // D.3.2 pg 102 (see Note:)
-  ECPoint operator -(ECPoint b)
+  ecc_base.ECPointBase operator -(ecc_base.ECPointBase b)
   {
     if( b.isInfinity ) {
       return this;
@@ -276,7 +277,7 @@ class ECPoint extends ecc.ECPointBase {
     return this + (-b);
   }
 
-  ECPoint operator -()
+  ecc_base.ECPointBase operator -()
   {
     return new ECPoint(curve, x, -y, isCompressed );
   }
@@ -284,7 +285,7 @@ class ECPoint extends ecc.ECPointBase {
 }
 
 /// Elliptic curve over Fp
-class ECCurve extends ecc.ECCurveBase {
+class ECCurve extends ecc_base.ECCurveBase {
 
   final BigInteger q;
   ECPoint _infinity;
@@ -352,7 +353,7 @@ class _WNafPreCompInfo implements PreCompInfo {
  * Function implementing the WNAF (Window Non-Adjacent Form) multiplication algorithm. Multiplies [p]] by an integer [k] using
  * the Window NAF method.
  */
-ECPoint _WNafMultiplier(ECPoint p, BigInteger k, PreCompInfo preCompInfo) {
+ECPoint _WNafMultiplier(ecc_base.ECPointBase p, BigInteger k, PreCompInfo preCompInfo){
 
   // Ignore empty PreCompInfo or PreCompInfo of incorrect type
   _WNafPreCompInfo wnafPreCompInfo = preCompInfo;

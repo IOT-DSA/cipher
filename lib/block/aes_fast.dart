@@ -12,6 +12,7 @@ import "dart:typed_data";
 import "package:cipher/src/ufixnum.dart";
 import "package:cipher/params/key_parameter.dart";
 import "package:cipher/block/base_block_cipher.dart";
+import 'package:cipher/api.dart';
 
 /**
  * An implementation of the AES (Rijndael), from FIPS-197.
@@ -57,8 +58,8 @@ class AESFastEngine extends BaseBlockCipher {
     _workingKey = null;
   }
 
-  void init( bool forEncryption, KeyParameter params ) {
-    var key = params.key;
+  void init( bool forEncryption, CipherParameters params ) {
+    var key = (params as KeyParameter).key;
 
     int KC = (key.lengthInBytes / 4).floor();  // key length in words
     if (((KC != 4) && (KC != 6) && (KC != 8)) || ((KC * 4) != key.lengthInBytes)) {
@@ -70,7 +71,7 @@ class AESFastEngine extends BaseBlockCipher {
     _workingKey = new List.generate( _ROUNDS+1, (int i) => new List<int>(4) ); // 4 words in a block
 
     // Copy the key into the round key array.
-    var keyView = new ByteData.view(params.key.buffer);
+    var keyView = new ByteData.view((params as KeyParameter).key.buffer);
     for( var i=0, t=0 ; i<key.lengthInBytes ; i+=4, t++ ) {
       var value = unpack32(keyView, i, Endianness.LITTLE_ENDIAN);
       _workingKey[t>>2][t&3] = value;

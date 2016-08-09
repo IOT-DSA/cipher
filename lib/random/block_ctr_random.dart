@@ -31,10 +31,10 @@ class BlockCtrRandom extends SecureRandomBase implements SecureRandom {
 
   String get algorithmName => "${cipher.algorithmName}/CTR/PRNG";
 
-  void seed(ParametersWithIV<CipherParameters> params) {
+  void seed(CipherParameters params) {
     _used = _output.length;
-    _input.setAll(0, params.iv);
-    cipher.init(true, params.parameters);
+    _input.setAll(0, (params as ParametersWithIV<CipherParameters>).iv);
+    cipher.init(true, (params as ParametersWithIV<CipherParameters>).parameters);
   }
 
   int nextUint8() {
