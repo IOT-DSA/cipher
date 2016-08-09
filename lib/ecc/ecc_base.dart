@@ -230,7 +230,7 @@ ECPointBase _FpNafMultiplier(ECPointBase p, BigInteger k, PreCompInfo preCompInf
       var eBit = e.testBit(i);
 
       if( hBit!=eBit ) {
-          R += (hBit ? p : neg);
+          R = (R + (hBit ? p : neg)) as ECPointBase;
       }
     }
 

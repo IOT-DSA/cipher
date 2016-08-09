@@ -452,10 +452,10 @@ ECPoint _WNafMultiplier(ecc_base.ECPointBase p, BigInteger k, PreCompInfo preCom
 
     if (wnaf[i] != 0) {
       if (wnaf[i] > 0) {
-        q += preComp[(wnaf[i] - 1)~/2];
+        q = q + preComp[(wnaf[i] - 1)~/2];
       } else {
         // wnaf[i] < 0
-        q -= preComp[(-wnaf[i] - 1)~/2];
+        q = q - preComp[(-wnaf[i] - 1)~/2];
       }
     }
   }
