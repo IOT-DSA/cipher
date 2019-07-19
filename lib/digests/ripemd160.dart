@@ -9,9 +9,9 @@ library cipher.digests.ripemd160;
 
 import "dart:typed_data";
 
-import "package:cipher/api.dart";
-import "package:cipher/src/ufixnum.dart";
-import "package:cipher/digests/md4_family_digest.dart";
+import "package:dscipher/api.dart";
+import "package:dscipher/src/ufixnum.dart";
+import "package:dscipher/digests/md4_family_digest.dart";
 
 /// Implementation of RIPEMD-160 digest.
 class RIPEMD160Digest extends MD4FamilyDigest implements Digest {

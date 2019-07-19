@@ -7,7 +7,7 @@
 
 library cipher.params.asymmetric_key_parameter;
 
-import "package:cipher/api.dart";
+import "package:dscipher/api.dart";
 
 /// Abstract [CipherParameters] to hold an asymmetric (public or private) key
 abstract class AsymmetricKeyParameter<T extends AsymmetricKey> implements CipherParameters {

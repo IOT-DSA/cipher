@@ -10,7 +10,7 @@ library cipher.benchmark.api.ufixnum_benchmark;
 import "dart:typed_data";
 
 import "package:bignum/bignum.dart";
-import "package:cipher/src/ufixnum.dart";
+import "package:dscipher/src/ufixnum.dart";
 import "../benchmark/operation_benchmark.dart";
 
 void main() {

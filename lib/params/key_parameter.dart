@@ -9,7 +9,7 @@ library cipher.params.key_parameter;
 
 import "dart:typed_data";
 
-import "package:cipher/api.dart";
+import "package:dscipher/api.dart";
 
 /// [CipherParameters] consisting of just a key of arbitrary length.
 class KeyParameter extends CipherParameters {

@@ -7,8 +7,8 @@
 
 library cipher.test.padded_block_cipher_test;
 
-import "package:cipher/cipher.dart";
-import "package:cipher/impl/base.dart";
+import "package:dscipher/cipher.dart";
+import "package:dscipher/impl/base.dart";
 import "package:test/test.dart";
 
 import "../test/src/null_block_cipher.dart";

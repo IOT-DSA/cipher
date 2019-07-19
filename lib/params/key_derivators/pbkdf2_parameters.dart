@@ -9,7 +9,7 @@ library cipher.params.key_derivators.pbkdf2_parameters;
 
 import "dart:typed_data";
 
-import "package:cipher/api.dart";
+import "package:dscipher/api.dart";
 
 /// [CipherParameters] used by PBKDF2.
 class Pbkdf2Parameters extends CipherParameters {

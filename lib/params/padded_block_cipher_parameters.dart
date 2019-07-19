@@ -7,7 +7,7 @@
 
 library cipher.params.padded_block_cipher_parameters;
 
-import "package:cipher/api.dart";
+import "package:dscipher/api.dart";
 
 /**
  * [CipherParameters] for [PaddedBlockCipher]s consisting of two underlying [CipherParameters], one for the [BlockCipher] (of

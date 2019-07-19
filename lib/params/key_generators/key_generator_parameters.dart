@@ -7,7 +7,7 @@
 
 library cipher.params.key_generators.key_generator_parameters;
 
-import "package:cipher/api.dart";
+import "package:dscipher/api.dart";
 
 /// Abstract [CipherParameters] to init an asymmetric key generator.
 abstract class KeyGeneratorParameters implements CipherParameters {

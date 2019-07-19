@@ -20,61 +20,61 @@ library cipher.impl.base;
 
 import "package:bignum/bignum.dart";
 
-import "package:cipher/adapters/stream_cipher_as_block_cipher.dart";
+import "package:dscipher/adapters/stream_cipher_as_block_cipher.dart";
 
-import "package:cipher/api.dart";
-import "package:cipher/api/ecc.dart";
+import "package:dscipher/api.dart";
+import "package:dscipher/api/ecc.dart";
 
-import "package:cipher/asymmetric/rsa.dart";
-import "package:cipher/asymmetric/pkcs1.dart";
+import "package:dscipher/asymmetric/rsa.dart";
+import "package:dscipher/asymmetric/pkcs1.dart";
 
-import "package:cipher/block/aes_fast.dart";
+import "package:dscipher/block/aes_fast.dart";
 
-import "package:cipher/digests/md2.dart";
-import "package:cipher/digests/md4.dart";
-import "package:cipher/digests/md5.dart";
-import "package:cipher/digests/ripemd128.dart";
-import "package:cipher/digests/ripemd160.dart";
-import "package:cipher/digests/ripemd256.dart";
-import "package:cipher/digests/ripemd320.dart";
-import "package:cipher/digests/sha1.dart";
-import "package:cipher/digests/sha224.dart";
-import "package:cipher/digests/sha256.dart";
-import "package:cipher/digests/sha3.dart";
-import "package:cipher/digests/sha384.dart";
-import "package:cipher/digests/sha512.dart";
-import "package:cipher/digests/sha512t.dart";
-import "package:cipher/digests/tiger.dart";
-import "package:cipher/digests/whirlpool.dart";
+import "package:dscipher/digests/md2.dart";
+import "package:dscipher/digests/md4.dart";
+import "package:dscipher/digests/md5.dart";
+import "package:dscipher/digests/ripemd128.dart";
+import "package:dscipher/digests/ripemd160.dart";
+import "package:dscipher/digests/ripemd256.dart";
+import "package:dscipher/digests/ripemd320.dart";
+import "package:dscipher/digests/sha1.dart";
+import "package:dscipher/digests/sha224.dart";
+import "package:dscipher/digests/sha256.dart";
+import "package:dscipher/digests/sha3.dart";
+import "package:dscipher/digests/sha384.dart";
+import "package:dscipher/digests/sha512.dart";
+import "package:dscipher/digests/sha512t.dart";
+import "package:dscipher/digests/tiger.dart";
+import "package:dscipher/digests/whirlpool.dart";
 
-import "package:cipher/ecc/ecc_base.dart";
-import "package:cipher/ecc/ecc_fp.dart" as fp;
+import "package:dscipher/ecc/ecc_base.dart";
+import "package:dscipher/ecc/ecc_fp.dart" as fp;
 
-import "package:cipher/key_derivators/pbkdf2.dart";
-import "package:cipher/key_derivators/scrypt.dart";
+import "package:dscipher/key_derivators/pbkdf2.dart";
+import "package:dscipher/key_derivators/scrypt.dart";
 
-import "package:cipher/key_generators/ec_key_generator.dart";
-import "package:cipher/key_generators/rsa_key_generator.dart";
+import "package:dscipher/key_generators/ec_key_generator.dart";
+import "package:dscipher/key_generators/rsa_key_generator.dart";
 
-import "package:cipher/macs/hmac.dart";
+import "package:dscipher/macs/hmac.dart";
 
-import "package:cipher/modes/cbc.dart";
-import "package:cipher/modes/cfb.dart";
-import "package:cipher/modes/ecb.dart";
-import "package:cipher/modes/gctr.dart";
-import "package:cipher/modes/ofb.dart";
-import "package:cipher/modes/sic.dart";
+import "package:dscipher/modes/cbc.dart";
+import "package:dscipher/modes/cfb.dart";
+import "package:dscipher/modes/ecb.dart";
+import "package:dscipher/modes/gctr.dart";
+import "package:dscipher/modes/ofb.dart";
+import "package:dscipher/modes/sic.dart";
 
-import "package:cipher/paddings/padded_block_cipher.dart";
-import "package:cipher/paddings/pkcs7.dart";
+import "package:dscipher/paddings/padded_block_cipher.dart";
+import "package:dscipher/paddings/pkcs7.dart";
 
-import "package:cipher/random/auto_seed_block_ctr_random.dart";
-import "package:cipher/random/block_ctr_random.dart";
+import "package:dscipher/random/auto_seed_block_ctr_random.dart";
+import "package:dscipher/random/block_ctr_random.dart";
 
-import "package:cipher/signers/ecdsa_signer.dart";
-import "package:cipher/signers/rsa_signer.dart";
+import "package:dscipher/signers/ecdsa_signer.dart";
+import "package:dscipher/signers/rsa_signer.dart";
 
-import "package:cipher/stream/salsa20.dart";
+import "package:dscipher/stream/salsa20.dart";
 
 part "../src/impl/base/ecc_curves.dart";
 

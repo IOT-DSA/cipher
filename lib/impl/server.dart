@@ -15,11 +15,11 @@
  */
 library cipher.impl.server;
 
-import "package:cipher/api.dart";
-import "package:cipher/impl/base.dart" as base;
+import "package:dscipher/api.dart";
+import "package:dscipher/impl/base.dart" as base;
 
-import "package:cipher/entropy/file_entropy_source.dart";
-import "package:cipher/entropy/url_entropy_source.dart";
+import "package:dscipher/entropy/file_entropy_source.dart";
+import "package:dscipher/entropy/url_entropy_source.dart";
 
 
 bool _initialized = false;

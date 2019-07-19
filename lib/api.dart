@@ -17,7 +17,7 @@ import "dart:async";
 import "dart:typed_data";
 
 import "package:bignum/bignum.dart";
-import "package:cipher/api/registry.dart";
+import "package:dscipher/api/registry.dart";
 
 part "./src/api/unkeyed.dart";
 part "./src/api/symmetric.dart";

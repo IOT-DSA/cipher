@@ -9,9 +9,9 @@ library cipher.digests.sha512t;
 
 import "dart:typed_data";
 
-import "package:cipher/api.dart";
-import "package:cipher/src/ufixnum.dart";
-import "package:cipher/digests/long_sha2_family_digest.dart";
+import "package:dscipher/api.dart";
+import "package:dscipher/src/ufixnum.dart";
+import "package:dscipher/digests/long_sha2_family_digest.dart";
 
 /// Implementation of SHA-512/t digest (see FIPS 180-4).
 class SHA512tDigest extends LongSHA2FamilyDigest implements Digest {

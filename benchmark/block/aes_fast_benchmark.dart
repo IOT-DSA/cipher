@@ -9,7 +9,7 @@ library cipher.benchmark.block.aes_fast_benchmark;
 
 import "dart:typed_data";
 
-import "package:cipher/cipher.dart";
+import "package:dscipher/cipher.dart";
 
 import "../benchmark/block_cipher_benchmark.dart";
 

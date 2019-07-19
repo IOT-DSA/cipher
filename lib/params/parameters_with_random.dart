@@ -7,7 +7,7 @@
 
 library cipher.params.parameters_with_random;
 
-import "package:cipher/api.dart";
+import "package:dscipher/api.dart";
 
 class ParametersWithRandom<UnderlyingParameters extends CipherParameters> implements CipherParameters {
 

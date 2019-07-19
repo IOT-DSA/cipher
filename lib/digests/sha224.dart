@@ -9,9 +9,9 @@ library cipher.digests.sha224;
 
 import "dart:typed_data";
 
-import "package:cipher/api.dart";
-import "package:cipher/src/ufixnum.dart";
-import "package:cipher/digests/md4_family_digest.dart";
+import "package:dscipher/api.dart";
+import "package:dscipher/src/ufixnum.dart";
+import "package:dscipher/digests/md4_family_digest.dart";
 
 /// Implementation of SHA-224 digest.
 class SHA224Digest extends MD4FamilyDigest implements Digest {

@@ -9,7 +9,7 @@ library cipher.params.parameters_with_iv;
 
 import "dart:typed_data";
 
-import "package:cipher/api.dart";
+import "package:dscipher/api.dart";
 
 /**
  * [CipherParameters] consisting of an underlying [CipherParameters] (of type [UnderlyingParameters]) and an initialization

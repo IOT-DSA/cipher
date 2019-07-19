@@ -9,9 +9,9 @@ library cipher.modes.cbc;
 
 import "dart:typed_data";
 
-import "package:cipher/api.dart";
-import "package:cipher/params/parameters_with_iv.dart";
-import "package:cipher/block/base_block_cipher.dart";
+import "package:dscipher/api.dart";
+import "package:dscipher/params/parameters_with_iv.dart";
+import "package:dscipher/block/base_block_cipher.dart";
 
 /// Implementation of Cipher-Block-Chaining (CBC) mode on top of a [BlockCipher].
 class CBCBlockCipher extends BaseBlockCipher {

@@ -9,7 +9,7 @@ library cipher.benchmark.stream.salsa20_benchmark;
 
 import "dart:typed_data";
 
-import "package:cipher/cipher.dart";
+import "package:dscipher/cipher.dart";
 
 import "../benchmark/stream_cipher_benchmark.dart";
 

@@ -7,7 +7,7 @@
 
 library cipher.test.api.registry_client_test;
 
-import "package:cipher/impl/client.dart";
+import "package:dscipher/impl/client.dart";
 import "package:test/test.dart";
 
 //import '../test/registry_tests.dart';

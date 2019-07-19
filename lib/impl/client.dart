@@ -15,7 +15,7 @@
  */
 library cipher.impl.client;
 
-import "package:cipher/impl/base.dart" as base;
+import "package:dscipher/impl/base.dart" as base;
 
 
 bool _initialized = false;

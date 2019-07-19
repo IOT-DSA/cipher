@@ -8,8 +8,8 @@
 library cipher.test.asymmetric.rsa_test;
 
 import "package:bignum/bignum.dart";
-import "package:cipher/cipher.dart";
-import "package:cipher/impl/base.dart";
+import "package:dscipher/cipher.dart";
+import "package:dscipher/impl/base.dart";
 
 import '../test/asymmetric_block_cipher_tests.dart';
 

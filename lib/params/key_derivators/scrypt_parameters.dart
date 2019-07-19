@@ -9,7 +9,7 @@ library cipher.params.key_derivators.scrypt_parameters;
 
 import "dart:typed_data";
 
-import "package:cipher/api.dart";
+import "package:dscipher/api.dart";
 
 /**
  * [CipherParameters] for the scrypt password based key derivation function.

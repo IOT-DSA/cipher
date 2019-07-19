@@ -10,8 +10,8 @@ library cipher.api.ecc;
 import "dart:typed_data";
 
 import "package:bignum/bignum.dart";
-import "package:cipher/api.dart";
-import "package:cipher/api/registry.dart";
+import "package:dscipher/api.dart";
+import "package:dscipher/api/registry.dart";
 
 /// Standard ECC curve description
 abstract class ECDomainParameters {

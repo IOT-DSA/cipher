@@ -9,7 +9,7 @@ library cipher.src.ufixnum_test;
 
 import 'dart:typed_data';
 
-import "package:cipher/src/ufixnum.dart";
+import "package:dscipher/src/ufixnum.dart";
 import "package:test/test.dart";
 
 void main() {

@@ -9,14 +9,14 @@ library cipher.modes.sic;
 
 import "dart:typed_data";
 
-import "package:cipher/api.dart";
-import "package:cipher/src/ufixnum.dart";
-import "package:cipher/params/parameters_with_iv.dart";
-import "package:cipher/stream/base_stream_cipher.dart";
+import "package:dscipher/api.dart";
+import "package:dscipher/src/ufixnum.dart";
+import "package:dscipher/params/parameters_with_iv.dart";
+import "package:dscipher/stream/base_stream_cipher.dart";
 
 /**
  * NOTE: the implementation of SIC/CTR mode of operation as a [BlockCipher] is done using a [StreamCipherAsBlockCipher] adapter
- * (see file [package:cipher/adapters/stream_cipher_adapters.dart] for more info).
+ * (see file [package:dscipher/adapters/stream_cipher_adapters.dart] for more info).
  */
 
 /**

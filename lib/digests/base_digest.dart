@@ -9,7 +9,7 @@ library cipher.digests.base_digest;
 
 import "dart:typed_data";
 
-import "package:cipher/api.dart";
+import "package:dscipher/api.dart";
 
 /// Base implementation of [Digest] which provides shared methods.
 abstract class BaseDigest implements Digest {

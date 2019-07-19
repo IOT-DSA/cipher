@@ -9,8 +9,8 @@ library cipher.digests.sha3;
 
 import "dart:typed_data";
 
-import "package:cipher/src/ufixnum.dart";
-import "package:cipher/digests/base_digest.dart";
+import "package:dscipher/src/ufixnum.dart";
+import "package:dscipher/digests/base_digest.dart";
 
 /// Implementation of SHA-3 digest.
 class SHA3Digest extends BaseDigest {

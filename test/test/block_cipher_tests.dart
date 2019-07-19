@@ -9,7 +9,7 @@ library cipher.test.test.block_cipher_tests;
 
 import "dart:typed_data";
 
-import "package:cipher/cipher.dart";
+import "package:dscipher/cipher.dart";
 import "package:test/test.dart";
 
 import "./src/helpers.dart";

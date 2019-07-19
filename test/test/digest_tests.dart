@@ -7,7 +7,7 @@
 
 library cipher.test.test.digest_tests;
 
-import "package:cipher/cipher.dart";
+import "package:dscipher/cipher.dart";
 import "package:test/test.dart";
 
 import "./src/helpers.dart";

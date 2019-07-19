@@ -7,7 +7,7 @@
 
 library cipher.test.test.registry_tests;
 
-import "package:cipher/cipher.dart";
+import "package:dscipher/cipher.dart";
 import "package:test/test.dart";
 
 void testAsymmetricBlockCipher( String algorithmName ) {

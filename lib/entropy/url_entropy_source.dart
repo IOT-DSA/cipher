@@ -11,7 +11,7 @@ import "dart:async";
 import "dart:typed_data";
 import "dart:io";
 
-import "package:cipher/api.dart";
+import "package:dscipher/api.dart";
 
 class UrlEntropySource implements EntropySource {
 

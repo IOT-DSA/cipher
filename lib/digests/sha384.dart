@@ -9,8 +9,8 @@ library cipher.digests.sha384;
 
 import "dart:typed_data";
 
-import "package:cipher/api.dart";
-import "package:cipher/digests/long_sha2_family_digest.dart";
+import "package:dscipher/api.dart";
+import "package:dscipher/digests/long_sha2_family_digest.dart";
 
 /// Implementation of SHA-384 digest.
 class SHA384Digest extends LongSHA2FamilyDigest implements Digest {

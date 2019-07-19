@@ -9,8 +9,8 @@ library cipher.engines.null_asymmetric_block_cipher;
 
 import "dart:typed_data";
 
-import "package:cipher/api.dart";
-import "package:cipher/asymmetric/base_asymmetric_block_cipher.dart";
+import "package:dscipher/api.dart";
+import "package:dscipher/asymmetric/base_asymmetric_block_cipher.dart";
 
 /**
  * An implementation of a null [AsymmetricBlockCipher], that is, a cipher that does not encrypt, neither decrypt. It can be used

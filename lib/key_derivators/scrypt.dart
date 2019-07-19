@@ -9,13 +9,13 @@ library cipher.key_derivators.scrypt;
 
 import "dart:typed_data";
 
-import "package:cipher/src/ufixnum.dart";
-import "package:cipher/params/key_derivators/scrypt_parameters.dart";
-import "package:cipher/params/key_derivators/pbkdf2_parameters.dart";
-import "package:cipher/key_derivators/base_key_derivator.dart";
-import "package:cipher/key_derivators/pbkdf2.dart";
-import "package:cipher/macs/hmac.dart";
-import "package:cipher/digests/sha256.dart";
+import "package:dscipher/src/ufixnum.dart";
+import "package:dscipher/params/key_derivators/scrypt_parameters.dart";
+import "package:dscipher/params/key_derivators/pbkdf2_parameters.dart";
+import "package:dscipher/key_derivators/base_key_derivator.dart";
+import "package:dscipher/key_derivators/pbkdf2.dart";
+import "package:dscipher/macs/hmac.dart";
+import "package:dscipher/digests/sha256.dart";
 
 /**
  * Implementation of SCrypt password based key derivation function. See the next link for info on

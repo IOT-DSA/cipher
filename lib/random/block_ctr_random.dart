@@ -9,10 +9,10 @@ library cipher.random.block_ctr_random;
 
 import "dart:typed_data";
 
-import "package:cipher/api.dart";
-import "package:cipher/src/ufixnum.dart";
-import "package:cipher/random/secure_random_base.dart";
-import "package:cipher/params/parameters_with_iv.dart";
+import "package:dscipher/api.dart";
+import "package:dscipher/src/ufixnum.dart";
+import "package:dscipher/random/secure_random_base.dart";
+import "package:dscipher/params/parameters_with_iv.dart";
 
 /// An implementation of [SecureRandom] that uses a [BlockCipher] with CTR mode to generate random values
 class BlockCtrRandom extends SecureRandomBase implements SecureRandom {

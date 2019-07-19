@@ -9,7 +9,7 @@ library cipher.paddings.base_padding;
 
 import "dart:typed_data";
 
-import "package:cipher/api.dart";
+import "package:dscipher/api.dart";
 
 /// Base implementation of [Padding] which provides shared methods.
 abstract class BasePadding implements Padding {

@@ -9,7 +9,7 @@ library cipher.stream.base_stream_cipher;
 
 import "dart:typed_data";
 
-import "package:cipher/api.dart";
+import "package:dscipher/api.dart";
 
 /// Base implementation of [StreamCipher] which provides shared methods.
 abstract class BaseStreamCipher implements StreamCipher {

@@ -12,20 +12,20 @@
  */
 library cipher;
 
-export "package:cipher/api.dart";
-export "package:cipher/api/ecc.dart";
-export "package:cipher/api/rsa.dart";
-//export "package:cipher/api/ufixnum.dart";
+export "package:dscipher/api.dart";
+export "package:dscipher/api/ecc.dart";
+export "package:dscipher/api/rsa.dart";
+//export "package:dscipher/api/ufixnum.dart";
 
-export 'package:cipher/params/asymmetric_key_parameter.dart';
-export 'package:cipher/params/key_parameter.dart';
-export 'package:cipher/params/padded_block_cipher_parameters.dart';
-export 'package:cipher/params/parameters_with_iv.dart';
-export 'package:cipher/params/parameters_with_random.dart';
+export 'package:dscipher/params/asymmetric_key_parameter.dart';
+export 'package:dscipher/params/key_parameter.dart';
+export 'package:dscipher/params/padded_block_cipher_parameters.dart';
+export 'package:dscipher/params/parameters_with_iv.dart';
+export 'package:dscipher/params/parameters_with_random.dart';
 
-export 'package:cipher/params/key_derivators/pbkdf2_parameters.dart';
-export 'package:cipher/params/key_derivators/scrypt_parameters.dart';
+export 'package:dscipher/params/key_derivators/pbkdf2_parameters.dart';
+export 'package:dscipher/params/key_derivators/scrypt_parameters.dart';
 
-export 'package:cipher/params/key_generators/ec_key_generator_parameters.dart';
-export 'package:cipher/params/key_generators/key_generator_parameters.dart';
-export "package:cipher/params/key_generators/rsa_key_generator_parameters.dart";
+export 'package:dscipher/params/key_generators/ec_key_generator_parameters.dart';
+export 'package:dscipher/params/key_generators/key_generator_parameters.dart';
+export "package:dscipher/params/key_generators/rsa_key_generator_parameters.dart";

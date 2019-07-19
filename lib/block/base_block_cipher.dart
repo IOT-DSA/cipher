@@ -9,7 +9,7 @@ library cipher.block.base_block_cipher;
 
 import "dart:typed_data";
 
-import "package:cipher/api.dart";
+import "package:dscipher/api.dart";
 
 /// Base implementation of [BlockCipher] which provides shared methods.
 abstract class BaseBlockCipher implements BlockCipher {

@@ -10,7 +10,7 @@ library cipher.api.rsa;
 import "dart:typed_data";
 
 import "package:bignum/bignum.dart";
-import "package:cipher/api.dart";
+import "package:dscipher/api.dart";
 
 /// Base class for asymmetric keys in RSA
 abstract class RSAAsymmetricKey implements AsymmetricKey {

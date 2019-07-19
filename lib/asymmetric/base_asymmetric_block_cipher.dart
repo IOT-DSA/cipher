@@ -9,7 +9,7 @@ library cipher.asymmetric.base_asymmetric_block_cipher;
 
 import "dart:typed_data";
 
-import "package:cipher/api.dart";
+import "package:dscipher/api.dart";
 
 /// Base implementation of [AsymmetricBlockCipher] which provides shared methods.
 abstract class BaseAsymmetricBlockCipher implements AsymmetricBlockCipher {

@@ -10,9 +10,9 @@ library cipher.asymmetric.rsa;
 import "dart:typed_data";
 
 import "package:bignum/bignum.dart";
-import "package:cipher/api/rsa.dart";
-import "package:cipher/params/asymmetric_key_parameter.dart";
-import "package:cipher/asymmetric/base_asymmetric_block_cipher.dart";
+import "package:dscipher/api/rsa.dart";
+import "package:dscipher/params/asymmetric_key_parameter.dart";
+import "package:dscipher/asymmetric/base_asymmetric_block_cipher.dart";
 
 class RSAEngine extends BaseAsymmetricBlockCipher {
 

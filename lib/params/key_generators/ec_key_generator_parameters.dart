@@ -7,9 +7,9 @@
 
 library cipher.params.key_generators.ec_key_generator_parameters;
 
-import "package:cipher/api.dart";
-import "package:cipher/api/ecc.dart";
-import "package:cipher/params/key_generators/key_generator_parameters.dart";
+import "package:dscipher/api.dart";
+import "package:dscipher/api/ecc.dart";
+import "package:dscipher/params/key_generators/key_generator_parameters.dart";
 
 /// Abstract [CipherParameters] to init an ECC key generator.
 class ECKeyGeneratorParameters extends KeyGeneratorParameters {

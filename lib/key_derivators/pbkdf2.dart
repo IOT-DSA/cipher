@@ -9,10 +9,10 @@ library cipher.key_derivators.pbkdf2;
 
 import "dart:typed_data";
 
-import "package:cipher/api.dart";
-import "package:cipher/params/key_parameter.dart";
-import "package:cipher/params/key_derivators/pbkdf2_parameters.dart";
-import "package:cipher/key_derivators/base_key_derivator.dart";
+import "package:dscipher/api.dart";
+import "package:dscipher/params/key_parameter.dart";
+import "package:dscipher/params/key_derivators/pbkdf2_parameters.dart";
+import "package:dscipher/key_derivators/base_key_derivator.dart";
 
 /**
  * Generator for PBE derived keys and ivs as defined by PKCS 5 V2.0 Scheme 2. This generator uses a SHA-1 HMac as the

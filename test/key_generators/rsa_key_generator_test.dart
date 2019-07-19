@@ -8,8 +8,8 @@
 library cipher.test.key_generators.rsa_key_generator_test;
 
 import 'package:bignum/bignum.dart';
-import 'package:cipher/cipher.dart';
-import "package:cipher/impl/base.dart";
+import 'package:dscipher/cipher.dart';
+import "package:dscipher/impl/base.dart";
 
 import "../test/src/fixed_secure_random.dart";
 import '../test/key_generators_tests.dart';

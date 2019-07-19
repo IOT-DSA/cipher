@@ -7,9 +7,9 @@
 
 library cipher.test.src.null_secure_random;
 
-import "package:cipher/api.dart";
-import "package:cipher/src/ufixnum.dart";
-import "package:cipher/random/secure_random_base.dart";
+import "package:dscipher/api.dart";
+import "package:dscipher/src/ufixnum.dart";
+import "package:dscipher/random/secure_random_base.dart";
 
 /// An implementation of [SecureRandom] that return numbers in growing sequence.
 class NullSecureRandom extends SecureRandomBase {

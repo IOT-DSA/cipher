@@ -9,10 +9,10 @@ library cipher.block.aes_fast;
 
 import "dart:typed_data";
 
-import "package:cipher/src/ufixnum.dart";
-import "package:cipher/params/key_parameter.dart";
-import "package:cipher/block/base_block_cipher.dart";
-import 'package:cipher/api.dart';
+import "package:dscipher/src/ufixnum.dart";
+import "package:dscipher/params/key_parameter.dart";
+import "package:dscipher/block/base_block_cipher.dart";
+import 'package:dscipher/api.dart';
 
 /**
  * An implementation of the AES (Rijndael), from FIPS-197.

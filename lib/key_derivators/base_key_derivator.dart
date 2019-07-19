@@ -9,7 +9,7 @@ library cipher.key_derivators.base_key_derivator;
 
 import "dart:typed_data";
 
-import "package:cipher/api.dart";
+import "package:dscipher/api.dart";
 
 /// Base implementation of [KeyDerivator] which provides shared methods.
 abstract class BaseKeyDerivator implements KeyDerivator {

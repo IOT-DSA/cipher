@@ -7,8 +7,8 @@
 
 library cipher.test.digests.sha1_test;
 
-import "package:cipher/cipher.dart";
-import "package:cipher/impl/base.dart";
+import "package:dscipher/cipher.dart";
+import "package:dscipher/impl/base.dart";
 
 import "../test/digest_tests.dart";
 

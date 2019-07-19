@@ -10,10 +10,10 @@ library cipher.ecc.ecc_fp;
 import "dart:typed_data";
 
 import 'package:bignum/bignum.dart';
-import "package:cipher/api.dart";
-import "package:cipher/ecc/ecc_base.dart" hide ECFieldElementBase, ECPointBase, ECCurveBase;
-import "package:cipher/ecc/ecc_base.dart" as ecc_base;
-import "package:cipher/api/ecc.dart" as ecc;
+import "package:dscipher/api.dart";
+import "package:dscipher/ecc/ecc_base.dart" hide ECFieldElementBase, ECPointBase, ECCurveBase;
+import "package:dscipher/ecc/ecc_base.dart" as ecc_base;
+import "package:dscipher/api/ecc.dart" as ecc;
 
 class ECFieldElement extends ecc_base.ECFieldElementBase {
 

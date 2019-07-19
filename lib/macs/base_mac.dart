@@ -9,7 +9,7 @@ library cipher.macs.base_mac;
 
 import "dart:typed_data";
 
-import "package:cipher/api.dart";
+import "package:dscipher/api.dart";
 
 /// Base implementation of [Mac] which provides shared methods.
 abstract class BaseMac implements Mac {

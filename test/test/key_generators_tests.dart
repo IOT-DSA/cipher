@@ -7,7 +7,7 @@
 
 library cipher.test.test.key_generators_tests;
 
-import "package:cipher/cipher.dart";
+import "package:dscipher/cipher.dart";
 import "package:test/test.dart";
 
 void runKeyGeneratorTests( KeyGenerator keyGenerator, List<AsymmetricKeyPair> expectedKeyPairs ) {

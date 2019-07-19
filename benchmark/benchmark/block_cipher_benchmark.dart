@@ -9,8 +9,8 @@ library cipher.benchmark.benchmark.block_cipher_benchmark;
 
 import "dart:typed_data";
 
-import "package:cipher/cipher.dart";
-import "package:cipher/impl/server.dart";
+import "package:dscipher/cipher.dart";
+import "package:dscipher/impl/server.dart";
 import "../benchmark/rate_benchmark.dart";
 
 typedef CipherParameters CipherParametersFactory();
